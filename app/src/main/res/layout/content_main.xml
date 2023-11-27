@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <ImageView
+        android:id="@+id/CosmoteLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cosmote"
+        android:contentDescription="@string/LogoImg"  />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@android:drawable/spinner_background"
+        app:layout_constraintStart_toStartOf="@+id/CosmoteLogo"
+        app:layout_constraintTop_toBottomOf="@+id/CosmoteLogo"
+         />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:background="@android:drawable/spinner_background"
+        app:layout_constraintStart_toStartOf="@+id/spinner"
+        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+    <ImageButton
+        android:id="@+id/buttonGps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="40dp"
+        android:background="?attr/selectableItemBackground"
+        app:layout_constraintStart_toEndOf="@+id/buttonInfo"
+        app:layout_constraintTop_toBottomOf="@+id/spinner2"
+        app:srcCompat="@drawable/nav_img"
+        android:contentDescription="@string/GpsButton" />
+
+    <ToggleButton
+        android:id="@+id/FlashBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/check"
+        app:layout_constraintStart_toStartOf="@+id/buttonInfo"
+        app:layout_constraintTop_toBottomOf="@+id/buttonInfo"
+        android:textOn=""
+        android:textOff="" />
+
+    <ImageButton
+        android:id="@+id/buttonInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="?attr/selectableItemBackground"
+        app:layout_constraintStart_toStartOf="@+id/spinner2"
+        app:layout_constraintTop_toBottomOf="@+id/spinner2"
+        app:srcCompat="@drawable/info_img"
+        android:contentDescription="@string/InfoButton" />
+
+    <ImageButton
+        android:id="@+id/DialButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="36dp"
+        android:background="?attr/selectableItemBackground"
+        android:contentDescription="@string/DialButton"
+        app:layout_constraintStart_toEndOf="@+id/buttonInfo"
+        app:layout_constraintTop_toBottomOf="@+id/buttonGps"
+        app:srcCompat="@drawable/dialimage" />
+</androidx.constraintlayout.widget.ConstraintLayout>

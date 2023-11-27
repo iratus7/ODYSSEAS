@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ΟΔΥΣΣΕΑΣ</string>
+    <string name="action_settings">ABOUT</string>
+    <string name="LogoImg">LogoImg</string>
+    <string name="GpsButton">GpsButton</string>
+    <string name="InfoButton">InfoButton</string>
+    <string name="DialButton">DialButton</string>
+</resources>

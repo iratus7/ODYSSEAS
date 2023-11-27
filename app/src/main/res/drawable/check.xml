@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- When selected, use -->
+   <item android:state_checked="true"> <bitmap android:src="@drawable/on"
+    android:gravity="center_vertical|left"
+         />
+   </item>
+    <!-- When not selected, use -->
+    <item android:state_checked="false">
+    <bitmap android:src="@drawable/off"
+        android:gravity="center_vertical|left"
+    /></item>
+</selector>
